@@ -53,6 +53,7 @@ export default function ItemListContainer(props) {
   return (
     <>
       <h3 className="Catalogo"> {props.greeting} </h3>
+      {<ItemCount stock={5} initial={1} onAdd={onAdd} />}
       <ItemList itemList={itemList} />
     </>
   );
