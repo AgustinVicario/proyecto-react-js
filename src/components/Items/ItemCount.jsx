@@ -7,7 +7,7 @@ export default function ItemCount(props) {
 
   return (
     <>
-      <div style={{ width: "250px" }}>
+      <div className="btn1y2" style={{ width: "250px" }}>
         <div className="btn1">
           <Button
             variant="success"
@@ -30,7 +30,7 @@ export default function ItemCount(props) {
             +
           </Button>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="btn2">
           <Button
             className="ItemCount"
             variant="outline-success"
