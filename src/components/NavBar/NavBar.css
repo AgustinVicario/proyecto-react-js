@@ -1,0 +1,30 @@
+/* NavBar */
+
+.NavBarColour {
+  background-color: #e3f2fd;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background: linear-gradient(rgb(0, 0, 255), white, red);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  background: steelblue;
+}
+
+.container {
+  padding: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}

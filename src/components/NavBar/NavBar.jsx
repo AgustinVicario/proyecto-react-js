@@ -1,30 +1,32 @@
 import React from "react";
-import { Navbar, Container, Nav, NavbarBrand } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import CartWidget from "../CartWidget/CartWidget";
+import "../NavBar/NavBar.css";
 
-export const NavbarApp = () => {
+function NavBar() {
   return (
     <>
-      <div id="navbar">
-        <Navbar bg="success" variant="dark" expand="lg">
+      <header className="header">
+        <Navbar className="NavBarColour" expand="lg">
           <Container>
-            <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-            <NavbarBrand>NOMBRE</NavbarBrand>
+            <Navbar.Brand href="#home">
+              <h1 className="titulo">Buenos Aires Basquetball</h1>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#">Inicio</Nav.Link>
-                <Nav.Link href="#">Productos</Nav.Link>
-                <Nav.Link href="#">Nosotros</Nav.Link>
-                <Nav.Link href="#">Contacto</Nav.Link>
+                <Nav.Link href="#Inicio">Inicio</Nav.Link>
+                <Nav.Link href="#Nosotros">Nosotros</Nav.Link>
+                <Nav.Link href="#Contacto">Contacto</Nav.Link>
               </Nav>
               <CartWidget />
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </div>
+        ;
+      </header>
     </>
   );
-};
+}
 
-export default NavbarApp;
+export default NavBar;

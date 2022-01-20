@@ -1,12 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavbarApp } from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import Navbar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/Items/ItemListContainer";
 
 function App() {
   return (
     <div className="App">
-      <NavbarApp />
+      <Navbar />
       <ItemListContainer greeting="Catalogo de Productos" />
     </div>
   );
